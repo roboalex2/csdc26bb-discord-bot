@@ -1,0 +1,28 @@
+server:
+  servlet.context-path: /csdc26bb-discord-bot
+
+spring:
+  application.name: csdc26bb-discord-bot
+  datasource:
+    url: "jdbc:mysql://172.16.1.6:3306/csdc26bb-discord?useSSL=false"
+    username: redacted
+    password: "redacted"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+
+springdoc:
+  swagger-ui:
+    urls:
+      - url: /openapi/api.yml
+        name: Base API
+
+logging.level:
+  org: info
+  at.template: info
+  com.zaxxer.hikari: info
+
+settings.discord:
+  token: "redacted"

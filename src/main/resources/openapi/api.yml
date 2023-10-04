@@ -1,0 +1,48 @@
+openapi: 3.0.1
+info:
+  title: v1 API
+  version: 1.0.0
+servers:
+  - url: /csdc26bb-discord-bot/api/v1
+paths:
+  /example:
+    post:
+      description: >-
+        Not yet filled
+      tags:
+        - ExampleInterfaceName
+      requestBody:
+        content:
+            application/json:
+              schema:
+                $ref: 'api.yml#/components/schemas/ExampleBody'
+      responses:
+        200:
+          description: Success
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: 'api-error.yml#/components/schemas/ErrorResponse'
+        500:
+          description: Internal error
+          content:
+            application/json:
+              schema:
+                $ref: 'api-error.yml#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    ExampleBody:
+      required:
+        - userId
+        - series
+      properties:
+        userId:
+          type: number
+        series:
+          type: array
+          items:
+            type: string
+
