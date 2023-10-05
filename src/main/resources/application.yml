@@ -4,7 +4,7 @@ server:
 spring:
   application.name: csdc26bb-discord-bot
   datasource:
-    url: "jdbc:mysql://172.16.1.6:3306/csdc26bb-discord?useSSL=false"
+    url: "jdbc:mysql://172.16.1.6:3306/csdc26bb-discord?useSSL=false&allowPublicKeyRetrieval=true"
     username: redacted
     password: "redacted"
     driver-class-name: com.mysql.cj.jdbc.Driver
