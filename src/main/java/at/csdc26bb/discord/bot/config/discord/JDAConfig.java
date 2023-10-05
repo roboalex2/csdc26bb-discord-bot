@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.exceptions.InvalidTokenException;
+import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +23,7 @@ public class JDAConfig {
 
     @Bean
     public JDABuilder jdaBuilder(DiscordConfigProperties discordConfigProperties) {
-        var builder = JDABuilder.createDefault(discordConfigProperties.getToken());
+        var builder = JDABuilder.createDefault(discordConfigProperties.getToken(), GatewayIntent.GUILD_MEMBERS);
 
         // Disable parts of the cache
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);

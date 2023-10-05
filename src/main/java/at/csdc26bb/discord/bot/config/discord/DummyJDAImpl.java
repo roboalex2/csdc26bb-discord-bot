@@ -345,9 +345,9 @@ public class DummyJDAImpl implements JDA {
      * @return {@link RestAction} - Type: {@link Command}
      * <br>The RestAction used to create or update the command
      * @throws IllegalArgumentException If null is provided
-     * @see Commands#slash(String, String) Commands.slash(...)
-     * @see Commands#message(String) Commands.message(...)
-     * @see Commands#user(String) Commands.user(...)
+     * @see SlashCommands#slash(String, String) Commands.slash(...)
+     * @see SlashCommands#message(String) Commands.message(...)
+     * @see SlashCommands#user(String) Commands.user(...)
      * @see Guild#upsertCommand(CommandData) Guild.upsertCommand(...)
      */
     @Override

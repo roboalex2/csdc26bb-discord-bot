@@ -24,7 +24,6 @@ public class WebSecurityConfig {
                         .anyRequest()
                         .permitAll()
                 )
-                .cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable);
         return http.build();
     }
