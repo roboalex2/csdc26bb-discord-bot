@@ -2,9 +2,9 @@
 
 Aktuelle features:
 
-### Commands:
+### Commands:
 
-##### Nur für Gilden-Administrator:
+##### Nur für Gilden-Administrator:
 
 `/reminder-manager add <role>` -> Gibt einer Rolle die Rechte reminder anzulegen/löschen.
 
@@ -12,7 +12,7 @@ Aktuelle features:
 
 `/reminder-manager list` -> Du kannst es dir denken.
 
-##### Für jeden der eine Reminder-Manager Rolle hat:
+##### Für jeden der eine Reminder-Manager Rolle hat:
 
 `/reminder create <receiverRole> <timestamp> <titel> [description]`:
 
