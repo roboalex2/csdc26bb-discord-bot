@@ -69,7 +69,7 @@ public class SlashCommandConfig {
                                 new SubcommandData("list", "List all active reminders"),
                                 new SubcommandData("abort", "Remove a role capable of reminder management")
                                         .addOptions(
-                                                new OptionData(OptionType.NUMBER, "id", "The ID of the reminder that should be aborted")
+                                                new OptionData(OptionType.INTEGER, "id", "The ID of the reminder that should be aborted")
                                                         .setRequired(true).setAutoComplete(true)
                                         )
 
