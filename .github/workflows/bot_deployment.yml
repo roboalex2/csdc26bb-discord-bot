@@ -19,5 +19,3 @@ jobs:
         run: sudo docker compose down --remove-orphans
       - name: Start new containers
         run: sudo docker compose up -d
-      - name: Delete secrets
-        run: rm ./.env
